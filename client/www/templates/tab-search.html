@@ -1,0 +1,22 @@
+<ion-view cache-view="false">
+  <ion-content class="padding">
+    <h2>View cache disabled</h2>
+    <div>
+      Here the template ion-view element has the cache-view="false" attribute to disable view caching. The view and the controller will be executed every time when this tab is activated.
+    </div>
+    <div class="row">
+      <div class="col">Gender</div>
+      <div class="col">{{data.gender}}</div>
+    </div>
+    <div class="row">
+      <div class="col">Name</div>
+      <div class="col">{{data.name.first}} {{data.name.last}}</div>
+    </div>
+    <div class="row">
+      <div class="col">Email</div>
+      <div class="col">{{data.email}}</div>
+    </div>
+  </ion-content>
+</ion-view>
+
+

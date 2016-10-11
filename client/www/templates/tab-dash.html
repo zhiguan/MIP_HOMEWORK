@@ -1,0 +1,20 @@
+<ion-view>
+  <ion-content class="padding">
+    <h2>View cache</h2>
+    By default Ionic caches the view, which mean that the controllers for example are not executed everytime when the view is brought into view.
+    <div>
+      <p>
+        Here is an example data loaded from http://api.randomuser.me/ and the data is loaded on the first time. When you switch to another tab and then switch back, you will see that the view stays the same and the data is not fetched again.
+      </p>
+
+      <p>
+        Instead the view and the controller are brought into play from the cache. That is the reason that there is no update. If you reload the browser manually you will se that the data is different with each refresh.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col">Name</div>
+      <div class="col">{{cookies}}</div>
+    </div>
+
+  </ion-content>
+</ion-view>
